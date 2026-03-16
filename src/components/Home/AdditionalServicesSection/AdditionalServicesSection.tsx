@@ -3,6 +3,8 @@ import { ArrowRight } from "lucide-react";
 import styles from "./AdditionalServicesSection.module.css";
 import { siteContent } from "../../../content/global";
 import { routes } from "../../../lib/routes";
+import { services } from "../../../lib/services";
+import { AdditionalServiceCard } from "../../AdditionalServiceCard/AdditionalServiceCard";
 
 const text = siteContent.home.additionalServicesSection;
 
@@ -17,7 +19,12 @@ export const AdditionalServicesSection = () => {
                     <p className={styles.description}>{text.description}</p>
                 </div>
                 <div className={styles.grid}>
-
+                    {/* to be changed with addtional services */}
+                    {services.map((service) => {
+                        return (
+                            <AdditionalServiceCard key={service.id} additionalService={service} />
+                        );
+                    })}
                 </div>
                 <div className={styles.ctaWrap}>
                     <Link href={routes.services} className={styles.cta}>

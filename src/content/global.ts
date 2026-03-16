@@ -25,12 +25,14 @@ export const siteContent = {
             titleStart: "I Nostri",
             titleHighlight: "Servizi Principali",
             description: "Offriamo una gamma completa di servizi per la gestione e manutenzione dei tuoi spazi",
+            ctaLabel: "Scopri di più",
         },
         additionalServicesSection: {
             titleStart: "Altri",
             titleHighlight: "Servizi",
             description: "Un'offerta completa per tutte le esigenze di facility management",
             ctaLabel: "Vedi Tutti i Servizi",
+            cardCtaLabel: "Scopri di piu",
         },
         whyUs: {
             title: "Perché Scegliere Smart it",

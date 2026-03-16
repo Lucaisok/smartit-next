@@ -33,11 +33,9 @@ export const Footer = () => {
                     <div>
                         <h3 className={styles.title}>{text.servicesTitle}</h3>
                         <ul className={styles.servicesList}>
-                            <li>{services.routineCleaning.label}</li>
-                            <li>{services.deepCleaning.label}</li>
-                            <li>{services.renovations.label}</li>
-                            <li>{services.maintenance.label}</li>
-                            <li>{services.conciergeAndReception.label}</li>
+                            {services.slice(0, 5).map((service) => (
+                                <li key={service.id}>{service.title}</li>
+                            ))}
                         </ul>
                     </div>
 

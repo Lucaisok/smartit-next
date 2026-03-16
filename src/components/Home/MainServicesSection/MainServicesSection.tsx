@@ -1,5 +1,7 @@
 import styles from "./MainServicesSection.module.css";
 import { siteContent } from "../../../content/global";
+import { services } from "@/src/lib/services";
+import { MainServiceCard } from "../../MainServiceCard/MainServiceCard";
 
 const text = siteContent.home.mainServicesSection;
 
@@ -14,7 +16,11 @@ export const MainServicesSection = () => {
                     <p className={styles.description}>{text.description}</p>
                 </div>
                 <div className={styles.grid}>
-
+                    {services.map((service) => {
+                        return (
+                            <MainServiceCard service={service} />
+                        );
+                    })}
                 </div>
             </div>
         </section>
