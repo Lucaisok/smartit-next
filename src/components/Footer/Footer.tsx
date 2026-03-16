@@ -35,9 +35,9 @@ export const Footer = () => {
                         <ul className={styles.servicesList}>
                             <li>{services.routineCleaning.label}</li>
                             <li>{services.deepCleaning.label}</li>
-                            <li>{services.businessCleaning.label}</li>
+                            <li>{services.renovations.label}</li>
                             <li>{services.maintenance.label}</li>
-                            <li>{services.conciergeServices.label}</li>
+                            <li>{services.conciergeAndReception.label}</li>
                         </ul>
                     </div>
 

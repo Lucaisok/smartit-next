@@ -21,6 +21,17 @@ export const siteContent = {
             description: "Contattaci oggi per un preventivo gratuito e scopri come possiamo aiutarti",
             primaryCta: "Contattaci Ora",
         },
+        mainServicesSection: {
+            titleStart: "I Nostri",
+            titleHighlight: "Servizi Principali",
+            description: "Offriamo una gamma completa di servizi per la gestione e manutenzione dei tuoi spazi",
+        },
+        additionalServicesSection: {
+            titleStart: "Altri",
+            titleHighlight: "Servizi",
+            description: "Un'offerta completa per tutte le esigenze di facility management",
+            ctaLabel: "Vedi Tutti i Servizi",
+        },
         whyUs: {
             title: "Perché Scegliere Smart it",
             subtitle: "Il partner ideale per la gestione dei tuoi spazi a Milano",
@@ -61,5 +72,13 @@ export const siteContent = {
         phone: "+39 012 345 6789",
         email: "info@smartit.it",
         copyrightSuffix: "Smart it. Tutti i diritti riservati.",
+    },
+    services: {
+        routineCleaning: "Pulizie ordinarie",
+        deepCleaning: "Pulizie straordinarie",
+        maintenance: "Manutenzioni",
+        conciergeAndReception: "Servizi di portierato e reception",
+        greenAreaMaintenance: "Manutenzione del verde",
+        renovations: "Ristrutturazioni",
     },
 };
