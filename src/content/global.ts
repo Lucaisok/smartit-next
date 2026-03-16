@@ -1,4 +1,13 @@
 export const siteContent = {
+    hero: {
+        imageAlt: "Milano buildings",
+        titleStart: "Soluzioni Complete per il",
+        titleHighlight: "Facility Management",
+        titleEnd: "a Milano",
+        description: "Dalla pulizia alla manutenzione, gestiamo ogni aspetto dei tuoi spazi aziendali con professionalità e affidabilità.",
+        primaryCta: "Richiedi un Preventivo",
+        secondaryCta: "Scopri i Servizi",
+    },
     nav: {
         logoAlt: "Smart it",
         logoLabel: "Smart it",

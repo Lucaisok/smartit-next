@@ -21,4 +21,13 @@
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
   --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+
+  --font-size-hero-title-lg: 4.5rem;
+  --font-size-hero-title-md: 3.75rem;
+  --font-size-hero-title-sm: 3rem;
+
+  --color-hero-subtitle: #d1d5db;
+  --color-gray-100: #f3f4f6;
 }

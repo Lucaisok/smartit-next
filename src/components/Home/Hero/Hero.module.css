@@ -1,0 +1,123 @@
+.section {
+    position: relative;
+    background: linear-gradient(to bottom right, var(--color-footer-bg), var(--color-footer-border));
+    color: var(--color-white);
+    height: calc(100vh - 5rem);
+}
+
+.overlay {
+    position: absolute;
+    inset: 0;
+    opacity: 0.2;
+}
+
+.overlayImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.content {
+    position: relative;
+    height: 100%;
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding-lg);
+    display: flex;
+    align-items: center;
+}
+
+.inner {
+    max-width: 48rem;
+    padding: 3rem 0;
+}
+
+.title {
+    font-size: var(--font-size-hero-title-lg);
+    margin-bottom: 2rem;
+    line-height: 1.15;
+}
+
+.titleHighlight {
+    color: var(--color-brand);
+}
+
+.description {
+    font-size: var(--font-size-2xl);
+    color: var(--color-hero-subtitle);
+    margin-bottom: 3rem;
+    line-height: 1.6;
+}
+
+.buttons {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.btnPrimary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: var(--color-brand);
+    color: var(--color-white);
+    padding: 1rem 2.5rem;
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    transition: background-color var(--transition-fast);
+    text-decoration: none;
+}
+
+.btnPrimary:hover {
+    background-color: var(--color-brand-hover);
+}
+
+.btnSecondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: var(--color-white);
+    color: var(--color-footer-bg);
+    padding: 1rem 2.5rem;
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-lg);
+    font-weight: 500;
+    transition: background-color var(--transition-fast);
+    text-decoration: none;
+}
+
+.btnSecondary:hover {
+    background-color: var(--color-gray-100);
+}
+
+@media (max-width: 1024px) {
+    .title {
+        font-size: var(--font-size-hero-title-md);
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        padding: 0 var(--container-padding-md);
+    }
+
+    .title {
+        font-size: var(--font-size-hero-title-sm);
+    }
+
+    .description {
+        font-size: var(--font-size-xl);
+    }
+}
+
+@media (max-width: 640px) {
+    .content {
+        padding: 0 var(--container-padding-sm);
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
