@@ -6,8 +6,8 @@ import { MobileNavigation } from "./MobileNavigation";
 import Link from "next/link";
 import { siteContent } from "@/src/content/global";
 import { routes } from "@/src/lib/routes";
-import { menuItems } from "@/src/components/Header/menuItems";
 import styles from "./Header.module.css";
+import { menuItems } from "@/src/lib/menuItems";
 
 export const Header = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);

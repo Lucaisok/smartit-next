@@ -1,0 +1,128 @@
+.footer {
+    background: var(--color-footer-bg);
+    color: var(--color-white);
+}
+
+.container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 3rem var(--container-padding-sm);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.logoBox {
+    background: var(--color-white);
+    border-radius: var(--radius-md);
+    padding: 0.75rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    height: var(--logo-height);
+    width: auto;
+}
+
+.muted {
+    color: var(--color-muted);
+    font-size: var(--font-size-sm);
+    line-height: 1.5;
+}
+
+.title {
+    font-size: var(--font-size-lg);
+    margin: 0 0 1rem;
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.link {
+    color: var(--color-muted);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.link:hover {
+    color: var(--color-brand);
+}
+
+.servicesList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--color-muted);
+    font-size: var(--font-size-sm);
+}
+
+.contactList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.contactItem {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-muted);
+}
+
+.contactItemTop {
+    align-items: flex-start;
+}
+
+.contactIcon {
+    color: var(--color-brand);
+    flex-shrink: 0;
+}
+
+.contactIconTop {
+    margin-top: 0.125rem;
+}
+
+.smallText {
+    font-size: var(--font-size-sm);
+}
+
+.bottom {
+    border-top: 1px solid var(--color-footer-border);
+    margin-top: 2rem;
+    padding-top: 2rem;
+    text-align: center;
+    color: var(--color-muted);
+    font-size: var(--font-size-sm);
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 3rem var(--container-padding-lg);
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 3rem var(--container-padding-md);
+    }
+
+    .grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}

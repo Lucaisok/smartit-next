@@ -1,6 +1,6 @@
 import { Home, Briefcase, Users, Mail } from "lucide-react";
-import { siteContent } from "@/src/content/global";
-import { routes } from "@/src/lib/routes";
+import { siteContent } from "../content/global";
+import { routes } from "./routes";
 
 export const menuItems = {
     home: { href: routes.home, label: siteContent.nav.homeLabel, icon: Home },

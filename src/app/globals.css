@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+:root {
+  --color-white: #ffffff;
+  --color-brand: #7fb539;
+  --color-brand-hover: #6a9a2e;
+  --color-muted: #9ca3af;
+  --color-header-border: #e5e7eb;
+  --color-footer-bg: #111827;
+  --color-footer-border: #1f2937;
+
+  --container-max-width: 80rem;
+  --container-padding-sm: 1rem;
+  --container-padding-md: 1.5rem;
+  --container-padding-lg: 2rem;
+
+  --radius-md: 0.5rem;
+  --logo-height: 2.5rem;
+  --transition-fast: 0.2s ease;
+
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+}

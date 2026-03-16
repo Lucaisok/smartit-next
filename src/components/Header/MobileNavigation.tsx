@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Sparkles } from "lucide-react";
 import styles from "./MobileNavigation.module.css";
 import { siteContent } from "@/src/content/global";
-import { menuItems } from "@/src/components/Header/menuItems";
+import { menuItems } from "@/src/lib/menuItems";
 
 interface MobileNavigationProps {
     mobileMenuOpen: boolean;
