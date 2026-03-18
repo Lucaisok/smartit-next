@@ -12,7 +12,10 @@ export interface Service {
 
 export interface AdditionalService {
     id: string;
+    slug: string;
     title: string;
     shortDescription: string;
-    icon?: LucideIcon;
+    description: string;
+    icon: LucideIcon;
+    image: string;
 }
