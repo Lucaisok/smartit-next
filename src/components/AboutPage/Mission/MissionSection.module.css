@@ -1,0 +1,79 @@
+.section {
+    padding: 5rem 0;
+    background: linear-gradient(135deg, var(--color-gray-900), var(--color-gray-800));
+    color: var(--color-white);
+}
+
+.container {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.grid {
+    display: grid;
+    gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+}
+
+.imageWrapper {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+}
+
+.image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.titleHighlight {
+    color: var(--color-brand);
+}
+
+.textBlock {
+    margin-bottom: 2rem;
+}
+
+.paragraph {
+    font-size: 1.125rem;
+    color: var(--color-text-secondary);
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.listItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.listIcon {
+    color: var(--color-brand);
+    flex-shrink: 0;
+    margin-top: 0.25rem;
+}
+
+.listText {
+    color: var(--color-text-secondary);
+}

@@ -47,6 +47,70 @@ export const siteContent = {
             dedicatedSupportDescription: "Un team professionale sempre a tua disposizione",
         },
     },
+    aboutPage: {
+        contactsSection: {
+            title: "Vuoi Conoscerci Meglio?",
+            subtitle: "Scopri tutti i nostri servizi o contattaci per un preventivo personalizzato",
+            primaryCta: "I Nostri Servizi",
+            secondaryCta: "Contattaci"
+        },
+        missionSection: {
+            titleStart: "La Nostra ",
+            titleHighlight: "Missione",
+            paragraphs: [
+                "La nostra missione è quella di ",
+                "garantire ambienti impeccabili e funzionali, preservando il valore dei vostri immobili nel tempo attraverso interventi mirati e personalizzati.",
+                "Dalla pulizia quotidiana alla manutenzione specializzata, ci impegniamo a offrire un servizio completo che copra ogni aspetto della gestione dei vostri spazi, con la massima attenzione alla qualità, alla sostenibilità e alla sicurezza."
+            ],
+            image: {
+                src: "https://images.unsplash.com/photo-1745847768380-2caeadbb3b71?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGhhbmRzaGFrZSUyMHBhcnRuZXJzaGlwfGVufDF8fHx8MTc3MzgwNjI3M3ww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+                alt: "Partnership"
+            },
+            list: [
+                "Soluzioni personalizzate per ogni tipo di ambiente",
+                "Attenzione costante alla qualità e ai dettagli",
+                "Rispetto delle normative e degli standard di settore"
+            ]
+        },
+        whyUsSection: {
+            titleStart: "Perché Scegliere ",
+            titleHighlight: "Smart it",
+            subtitle: "Cosa ci distingue nel panorama del facility management a Milano",
+        },
+        hero: {
+            image: "https://images.unsplash.com/photo-1559458049-9d62fceeb52b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBtaWxhbiUyMG9mZmljZmluZ3xlbnwxfHx8fDE3NzM4NDg5ODR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+            imageAlt: "Milano",
+            titleStart: "Chi",
+            titleHighlight: "Siamo",
+            description: "Il tuo partner di fiducia per il facility management",
+        },
+        info: {
+            valuesSection: {
+                titleStart: "I Nostri",
+                titleHighlight: "Valori",
+                subtitle: "I principi che guidano ogni nostro intervento e che ci rendono il partner ideale per il vostro facility management",
+            },
+            badge: {
+                icon: "award",
+                label: "Certificati e Professionali",
+            },
+            titleStart: "Esperienza e",
+            titleHighlight: "Innovazione",
+            titleEnd: "al Vostro Servizio",
+            paragraphs: [
+                "Siamo un'azienda certificata che unisce l'esperienza consolidata nel settore alla dinamicità di un team giovane e preparato. Da anni operiamo nel facility management con un approccio orientato al risultato e al rispetto dei più elevati standard qualitativi, senza mai perdere di vista l'importanza del rapporto diretto con il cliente e la cura dei suoi bisogni specifici.",
+                "Con Smart it ampliamo ulteriormente il nostro ventaglio di servizi occupandoci con professionalità e flessibilità della gestione del vostro ambiente in tutte le sue fasi, per offrirvi soluzioni su misura che valorizzino e preservino i vostri spazi."
+            ],
+            image: {
+                src: "https://images.unsplash.com/photo-1697463624716-cd2f0423d9d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBjbGVhbmluZyUyMHRlYW0lMjBvZmZpY2V8ZW58MXx8fHwxNzczODQ4OTg0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+                alt: "Team Smart it",
+            },
+            experience: {
+                number: "15+",
+                label: "Anni di Esperienza",
+            },
+        },
+    },
     servicesPage: {
         hero: {
             image: "https://images.unsplash.com/photo-1719005764706-9805b8f8eb81?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidWlsZGluZyUyMGZhY2lsaXR5JTIwbWFuYWdlbWVudHxlbnwxfHx8fDE3NzMzMjkyNDR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",

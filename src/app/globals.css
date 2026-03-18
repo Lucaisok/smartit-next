@@ -1,6 +1,7 @@
 @import "tailwindcss";
 
 :root {
+  --color-brand-dark: #6a9a2e;
   --color-white: #ffffff;
   --color-brand: #7fb539;
   --color-brand-hover: #6a9a2e;
