@@ -42,10 +42,6 @@ export const Footer = () => {
                     <div>
                         <h3 className={styles.title}>{text.contactTitle}</h3>
                         <ul className={styles.contactList}>
-                            <li className={`${styles.contactItem} ${styles.contactItemTop}`}>
-                                <MapPin size={20} className={`${styles.contactIcon} ${styles.contactIconTop}`} />
-                                <span className={styles.smallText}>{text.city}</span>
-                            </li>
                             <li className={styles.contactItem}>
                                 <Phone size={20} className={styles.contactIcon} />
                                 <a href={`tel:${text.phone.replace(/\s+/g, "")}`} className={`${styles.link} ${styles.smallText}`}>
@@ -57,6 +53,10 @@ export const Footer = () => {
                                 <a href={`mailto:${text.email}`} className={`${styles.link} ${styles.smallText}`}>
                                     {text.email}
                                 </a>
+                            </li>
+                            <li className={`${styles.contactItem} ${styles.contactItemTop}`}>
+                                <MapPin size={20} className={`${styles.contactIcon} ${styles.contactIconTop}`} />
+                                <span className={styles.smallText}>{text.city}</span>
                             </li>
                         </ul>
                     </div>

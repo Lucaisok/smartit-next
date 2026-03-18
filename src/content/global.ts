@@ -70,9 +70,9 @@ export const siteContent = {
         maintenance: "Manutenzioni",
         conciergeServices: "Servizi di Portierato",
         contactTitle: "Contatti",
-        city: "Milano, Italia",
-        phone: "+39 012 345 6789",
-        email: "info@smartit.it",
+        city: "Palazzo dei Congressi Milanofiori, Assago (MI)",
+        phone: "+39 02828 605 83",
+        email: "Info@smartit-srl.com",
         copyrightSuffix: "Smart it. Tutti i diritti riservati.",
     },
     services: {
