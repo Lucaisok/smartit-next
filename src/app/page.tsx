@@ -4,16 +4,27 @@ import { Contacts } from "../components/Home/Contacts/Contacts";
 import { WhyUs } from "../components/Home/WhyUs/WhyUs";
 import { MainServicesSection } from "../components/Home/MainServicesSection/MainServicesSection";
 import { AdditionalServicesSection } from "../components/Home/AdditionalServicesSection/AdditionalServicesSection";
+import { homeMetadata, homeStructuredData } from "../lib/seo/home";
+import Head from "next/head";
+
+export const metadata = homeMetadata;
 
 export default function Home() {
   return (
-    <main>
-      <Hero />
-      <About />
-      <MainServicesSection />
-      <AdditionalServicesSection />
-      <WhyUs />
-      <Contacts />
-    </main>
+    <>
+      <Head>
+        <script type="application/ld+json">
+          {JSON.stringify(homeStructuredData)}
+        </script>
+      </Head>
+      <main>
+        <Hero />
+        <About />
+        <MainServicesSection />
+        <AdditionalServicesSection />
+        <WhyUs />
+        <Contacts />
+      </main>
+    </>
   );
 }

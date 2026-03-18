@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { siteMetadata, siteStructuredData } from "../lib/seo/site";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Header } from "../components/Header/Header";
@@ -15,8 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Smart it - Facility Management",
-  description: "Soluzioni complete per il facility managment a Milano, Assago e Buccinasco ",
+  ...siteMetadata,
 };
 
 export default function RootLayout({
@@ -25,7 +25,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="it">
+      <head>
+        <script type="application/ld+json">
+          {JSON.stringify(siteStructuredData.organization)}
+        </script>
+        <script type="application/ld+json">
+          {JSON.stringify(siteStructuredData.localBusiness)}
+        </script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
