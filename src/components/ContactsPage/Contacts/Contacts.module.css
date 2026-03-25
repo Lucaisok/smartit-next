@@ -1,0 +1,108 @@
+.contactsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.04);
+    border: 1px solid #e5e7eb;
+}
+
+.cardTitle {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.infoList {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.infoItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.iconBox {
+    width: 3rem;
+    height: 3rem;
+    background: rgba(127, 181, 57, 0.1);
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.infoLabel {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.25rem;
+}
+
+.infoLink {
+    color: #4b5563;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: color 0.2s;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.infoLink:hover {
+    color: #7fb539;
+}
+
+.whatsappButton {
+    background: rgba(127, 181, 57, 1);
+    color: #fff !important;
+    padding: 0.5rem 1.25rem;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    transition: background 0.2s;
+    text-decoration: none;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.04);
+}
+
+.whatsappButton:hover {
+    background: #6a9a2e;
+    color: #fff;
+}
+
+.infoValue {
+    color: #4b5563;
+    font-size: 1rem;
+}
+
+.openingCard {
+    background: #7fb539;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.openingTitle {
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.openingRow {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}

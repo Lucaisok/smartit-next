@@ -1,4 +1,9 @@
 export const siteContent = {
+    inspectionSection: {
+        title: "Preferisci un sopralluogo presso la tua sede?",
+        description: "I nostri tecnici sono disponibili per sopralluoghi gratuiti a Milano e in tutta la Lombardia. Valuteremo insieme la soluzione migliore per le tue esigenze.",
+        badge: "Servizio Gratuito"
+    },
     home: {
         about: {
             brand: "Smart it",
@@ -55,7 +60,9 @@ export const siteContent = {
             hoursTitle: "Orari di Apertura",
             hours: "Lunedì - Venerdì: 09:00 - 18:00",
             callNow: "Chiamaci Ora",
-            position: "Il nostro ufficio è strategicamente situato nel cuore di Milanofiori. Qui potrai incontrarci e discutere direttamente delle tue esigenze."
+            position: "Il nostro ufficio è strategicamente situato nel cuore di Milanofiori. Qui potrai incontrarci e discutere direttamente delle tue esigenze.",
+            sendMessage: "Inviaci un messaggio",
+            WhatsApp: "WhatsApp"
         },
         benefits: [
             {
@@ -217,4 +224,20 @@ export const siteContent = {
             description: "Offriamo un servizio completo di imbiancatura per abitazioni, uffici e spazi commerciali. Utilizziamo vernici di alta qualità e tecniche avanzate per assicurare una finitura liscia e uniforme. Il nostro team di esperti si occupa di ogni fase del processo, dalla preparazione delle superfici alla pulizia finale, garantendo un risultato impeccabile che trasforma i tuoi spazi.",
         },
     },
+    contactsPage: {
+        hero: {
+            title: "Contattaci",
+            description: "Hai bisogno di informazioni o vuoi richiedere un preventivo? Siamo qui per aiutarti."
+        },
+        form: {
+            title: "Richiedi un Preventivo",
+            nameLabel: "Nome e Cognome *",
+            emailLabel: "Email *",
+            phoneLabel: "Telefono",
+            messageLabel: "Messaggio *",
+            messagePlaceholder: "Descrivi la tua richiesta...",
+            button: "Invia Richiesta",
+            success: "Grazie per averci contattato! Ti risponderemo al più presto."
+        }
+    }
 };

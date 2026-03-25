@@ -1,0 +1,26 @@
+.mainBg {
+    background: var(--color-gray-50);
+}
+
+.section {
+    padding: 4rem 0;
+    background: #fff;
+}
+
+.container {
+    max-width: var(--container-max-width);
+    margin-inline: auto;
+    padding-inline: var(--container-padding-lg);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+@media (min-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
