@@ -1,0 +1,39 @@
+.breadcrumbsBg {
+    background: var(--color-gray-50);
+    border-bottom: 1px solid var(--color-gray-200);
+}
+
+.breadcrumbsContainer {
+    max-width: var(--container-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--container-padding-md);
+    padding-right: var(--container-padding-md);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: var(--font-size-sm);
+}
+
+.link {
+    color: var(--color-gray-600);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+}
+
+.link:hover {
+    color: var(--color-brand);
+}
+
+.separator {
+    color: var(--color-gray-400);
+}
+
+.current {
+    color: var(--color-gray-900);
+}

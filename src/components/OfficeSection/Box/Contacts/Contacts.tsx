@@ -1,5 +1,5 @@
 import { Clock, MapPin, Phone } from "lucide-react";
-import { siteContent } from "../../../../content/global";
+import { contacts, siteContent } from "../../../../content/global";
 import styles from "./Contacts.module.css";
 
 export const Contacts = () => {
@@ -26,7 +26,7 @@ export const Contacts = () => {
                 </div>
                 <div className={styles.textBlock}>
                     <h4 className={styles.title}>{labels.phoneTitle}</h4>
-                    <a href={`tel:${footer.phone.replace(/\s+/g, "")}`} className={styles.valueStrong}>
+                    <a href={`tel:${contacts.hrefPhoneNumber}`} className={styles.valueStrong}>
                         {footer.phone}
                     </a>
                     <p className={styles.note}>{labels.phoneNote}</p>

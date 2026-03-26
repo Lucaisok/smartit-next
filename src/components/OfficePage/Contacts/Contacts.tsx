@@ -1,35 +1,31 @@
-import React from "react";
 import styles from "./Contacts.module.css";
 import { Building2, Phone, ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { routes } from "../../../lib/routes";
-import { siteContent } from "../../../content/global";
+import { contacts, siteContent } from "../../../content/global";
 
-const {
-    officeSection: {
-        cards: { phoneNumber },
-    },
-} = siteContent;
 
 export default function Contacts() {
+    const content = siteContent.officeSection.contactsLabels;
+
     return (
         <section className={styles.contactsSection}>
             <div className={styles.container}>
                 <Building2 className={styles.icon} size={64} />
-                <h2 className={styles.title}>Ti Aspettiamo al Punto Smart it</h2>
+                <h2 className={styles.title}>{content.welcome}</h2>
                 <p className={styles.desc}>
-                    Vieni a trovarci per una consulenza gratuita. Il nostro team è pronto ad ascoltare le tue esigenze e a proporti le soluzioni più adatte.
+                    {content.visitNote}
                 </p>
                 <div className={styles.actions}>
                     <a
-                        href={`tel:${phoneNumber.replace(/\s+/g, "")}`}
+                        href={contacts.hrefPhoneNumber}
                         className={styles.primaryBtn}
                     >
                         <Phone size={22} />
-                        {`Chiamaci: ${phoneNumber}`}
+                        {`${siteContent.officeSection.cards.phoneNote}: ${contacts.phoneNumber}`}
                     </a>
                     <Link href={routes.contacts} className={styles.secondaryBtn}>
-                        Compila il Form
+                        {content.ctaLabel}
                         <ArrowRight size={20} />
                     </Link>
                 </div>

@@ -1,0 +1,77 @@
+.contactsSection {
+    padding: var(--section-padding);
+    background: linear-gradient(135deg, var(--color-brand) 0%, var(--color-brand-dark) 100%);
+    color: var(--color-white);
+}
+
+.contactsContainer {
+    max-width: var(--container-max-width);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--container-padding-sm);
+    padding-right: var(--container-padding-sm);
+    text-align: center;
+}
+
+.title {
+    font-size: var(--font-size-4xl);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: var(--color-white);
+    opacity: 0.9;
+    margin-bottom: 2rem;
+    font-size: var(--font-size-lg);
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+@media (min-width: 640px) {
+    .actions {
+        flex-direction: row;
+    }
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: var(--color-white);
+    color: var(--color-brand);
+    padding: 0.75rem 2rem;
+    border-radius: var(--radius-md);
+    transition: background var(--transition-fast);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.button:hover {
+    background: var(--color-gray-100);
+}
+
+.call {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    color: var(--color-white);
+    padding: 0.75rem 2rem;
+    border-radius: var(--radius-md);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    transition: background var(--transition-fast);
+    text-decoration: none;
+}
+
+.call:hover {
+    background: rgba(255, 255, 255, 0.2);
+}

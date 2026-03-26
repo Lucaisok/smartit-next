@@ -1,7 +1,7 @@
 import { Phone } from "lucide-react";
 import { Benefits } from "./Benefits/Benefits";
 import { Contacts } from "./Contacts/Contacts";
-import { siteContent } from "../../../content/global";
+import { contacts, siteContent } from "../../../content/global";
 import styles from "./Box.module.css";
 
 export const Box = () => {
@@ -18,7 +18,7 @@ export const Box = () => {
                     <Contacts />
                     <div className={styles.cta}>
                         <a
-                            href={`tel:${siteContent.footer.phone.replace(/\s+/g, "")}`}
+                            href={`tel:${contacts.hrefPhoneNumber}`}
                             className={styles.ctaButton}
                         >
                             <Phone size={22} />

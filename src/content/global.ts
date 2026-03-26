@@ -1,4 +1,23 @@
+export const contacts = {
+    hrefPhoneNumber: "tel:+390282860583",
+    phoneNumber: "+39 02 828 605 83",
+    email: "info@smartit.com",
+    mapsURL: "https://maps.app.goo.gl/gvpoyVtXfuMnt6rZ8",
+    addressLine1: "Palazzo dei Congressi Milanofiori",
+    addressLine2: "Assago (MI)"
+};
 export const siteContent = {
+    servicePage: {
+        backToServices: "Torna ai Servizi",
+        freeConsultation: "Preventivo Gratuito",
+        freeInspection: "Sopralluogo Gratuito",
+        faqTitle: "Domande Frequenti",
+        faqSubtitle: "Le risposte alle domande più comuni sul servizio",
+        ctaTitle: "Interessato al servizio",
+        ctaSubtitle: "Contattaci oggi per un preventivo gratuito e personalizzato",
+        ctaButton: "Richiedi Preventivo",
+        ctaCall: "Chiama Ora"
+    },
     inspectionSection: {
         title: "Preferisci un sopralluogo presso la tua sede?",
         description: "I nostri tecnici sono disponibili per sopralluoghi gratuiti a Milano e in tutta la Lombardia. Valuteremo insieme la soluzione migliore per le tue esigenze.",
@@ -31,6 +50,8 @@ export const siteContent = {
             titleHighlight: "Servizi Principali",
             description: "Offriamo una gamma completa di servizi per la gestione e manutenzione dei tuoi spazi",
             ctaLabel: "Scopri di più",
+            otherServices: "Altri Servizi",
+            otherServicesDescription: "Scopri gli altri servizi che potrebbero interessarti"
         },
         additionalServicesSection: {
             titleStart: "Altri",
@@ -65,7 +86,7 @@ export const siteContent = {
             hoursTitle: "Orari di Apertura",
             hoursDays: "Lunedì - Venerdì",
             hoursTime: "09:00 - 18:00",
-            hoursNote: "Su appuntamento anche al di fuori degli orari standard"
+            hoursNote: "Su appuntamento anche al di fuori degli orari standard",
         },
         contactsLabels: {
             addressTitle: "Indirizzo",
@@ -76,7 +97,10 @@ export const siteContent = {
             callNow: "Chiamaci Ora",
             position: "Il nostro ufficio è strategicamente situato nel cuore di Milanofiori. Qui potrai incontrarci e discutere direttamente delle tue esigenze.",
             sendMessage: "Inviaci un messaggio",
-            WhatsApp: "WhatsApp"
+            WhatsApp: "WhatsApp",
+            welcome: "Ti Aspettiamo al Punto Smart it",
+            visitNote: "Vieni a trovarci per una consulenza gratuita. Il nostro team è pronto ad ascoltare le tue esigenze e a proporti le soluzioni più adatte.",
+            ctaLabel: "Compila il Form"
         },
         benefits: [
             {
@@ -180,8 +204,9 @@ export const siteContent = {
     },
     officePage: {
         badge: "Il Tuo Punto di Riferimento a Milano",
-        title: "Benvenuto al Punto Smart it",
+        title: "Benvenuto al",
         description: "Il nostro ufficio presso il Palazzo dei Congressi Milanofiori è il luogo ideale per consulenze personalizzate, preventivi immediati e per conoscere da vicino i nostri servizi.",
+        ctaLabel: "Ottieni Indicazioni"
     },
     header: {
         logoAlt: "Smart it",
@@ -212,11 +237,45 @@ export const siteContent = {
         email: "Info@smartit-srl.com",
         copyrightSuffix: "Smart it. Tutti i diritti riservati.",
     },
+    contactsPage: {
+        hero: {
+            title: "Contattaci",
+            description: "Hai bisogno di informazioni o vuoi richiedere un preventivo? Siamo qui per aiutarti."
+        },
+        form: {
+            title: "Richiedi un Preventivo",
+            nameLabel: "Nome e Cognome *",
+            emailLabel: "Email *",
+            phoneLabel: "Telefono",
+            messageLabel: "Messaggio *",
+            messagePlaceholder: "Descrivi la tua richiesta...",
+            button: "Invia Richiesta",
+            success: "Grazie per averci contattato! Ti risponderemo al più presto."
+        }
+    },
     services: {
         cleaning: {
             title: "Pulizie Ordinarie e Straordinarie",
-            shortDescription: "Servizi di pulizia regolare e interventi approfonditi per sanificazione e pulizia straordinaria.",
-            description: "Il nostro servizio di pulizie garantisce ambienti sempre puliti, igienizzati e accoglienti. Offriamo soluzioni personalizzate per uffici, negozi e spazi commerciali con personale qualificato e prodotti professionali.",
+            shortDescription: `I nostri servizi di pulizie ordinarie per aziende, uffici e strutture professionali garantiscono ambienti sempre puliti, igienizzati e accoglienti.`,
+            description: `Operiamo con puntualità e discrezione, adattandoci alle vostre esigenze operative senza interferire con le attività quotidiane.
+
+Utilizziamo esclusivamente prodotti certificati e attrezzature di alta qualità, gestiti da personale esperto e in costante aggiornamento professionale.
+Offriamo interventi regolari su misura, pensati per mantenere nel tempo elevati standard di igiene e decoro, in qualsiasi contesto lavorativo.
+Lavoriamo a Milano, Assago, Buccinasco e comuni limitrofi, con la massima affidabilità e flessibilità.`,
+            faqs: [
+                {
+                    question: "Con quale frequenza effettuate le pulizie?",
+                    answer: "Offriamo diverse frequenze: giornaliera, settimanale, bisettimanale o mensile, in base alle tue esigenze."
+                },
+                {
+                    question: "Quali prodotti utilizzate?",
+                    answer: "Utilizziamo prodotti professionali certificati, ecologici e sicuri per la salute delle persone."
+                },
+                {
+                    question: "Posso modificare il programma di pulizie?",
+                    answer: "Sì, il servizio è completamente flessibile e può essere adattato in qualsiasi momento."
+                }
+            ]
         },
         businessAndOfficeCleaning: {
             title: "Pulizie per Aziende e Uffici",
@@ -244,20 +303,4 @@ export const siteContent = {
             description: "Offriamo un servizio completo di imbiancatura per abitazioni, uffici e spazi commerciali. Utilizziamo vernici di alta qualità e tecniche avanzate per assicurare una finitura liscia e uniforme. Il nostro team di esperti si occupa di ogni fase del processo, dalla preparazione delle superfici alla pulizia finale, garantendo un risultato impeccabile che trasforma i tuoi spazi.",
         },
     },
-    contactsPage: {
-        hero: {
-            title: "Contattaci",
-            description: "Hai bisogno di informazioni o vuoi richiedere un preventivo? Siamo qui per aiutarti."
-        },
-        form: {
-            title: "Richiedi un Preventivo",
-            nameLabel: "Nome e Cognome *",
-            emailLabel: "Email *",
-            phoneLabel: "Telefono",
-            messageLabel: "Messaggio *",
-            messagePlaceholder: "Descrivi la tua richiesta...",
-            button: "Invia Richiesta",
-            success: "Grazie per averci contattato! Ti risponderemo al più presto."
-        }
-    }
 };

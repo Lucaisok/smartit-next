@@ -1,9 +1,10 @@
 
 import { Building2, Navigation, Phone } from "lucide-react";
 import styles from "./Hero.module.css";
-import { siteContent } from "@/src/content/global";
+import { contacts, siteContent } from "@/src/content/global";
 
 export const Hero = () => {
+    const content = siteContent.officePage;
     return (
         <section className={styles.heroSection}>
             <div className={styles.bgOverlay}></div>
@@ -16,32 +17,31 @@ export const Hero = () => {
                 <div className={styles.inner}>
                     <div className={styles.badge}>
                         <Building2 size={20} />
-                        <span className={styles.badgeText}>Il Tuo Punto di Riferimento a Milano</span>
+                        <span className={styles.badgeText}>{content.badge}</span>
                     </div>
                     <h1 className={styles.title}>
-                        <span className={styles.titleLight}>Benvenuto al</span> <br />
-                        <span className={styles.highlight}>Punto Smart it</span>
+                        <span className={styles.titleLight}>{content.title}</span> <br />
+                        <span className={styles.highlight}>{siteContent.header.officeLabel}</span>
                     </h1>
                     <p className={styles.description}>
-                        Il nostro ufficio presso il Palazzo dei Congressi Milanofiori è il luogo ideale per
-                        consulenze personalizzate, preventivi immediati e per conoscere da vicino i nostri servizi.
+                        {content.description}
                     </p>
                     <div className={styles.actions}>
                         <a
-                            href="tel:+390282860583"
+                            href={contacts.hrefPhoneNumber}
                             className={styles.primaryBtn}
                         >
                             <Phone size={22} />
-                            Chiamaci Ora
+                            {siteContent.officeSection.contactsLabels.callNow}
                         </a>
                         <a
-                            href="https://maps.app.goo.gl/gvpoyVtXfuMnt6rZ8"
+                            href={contacts.mapsURL}
                             target="_blank"
                             rel="noopener noreferrer"
                             className={styles.secondaryBtn}
                         >
                             <Navigation size={22} />
-                            Ottieni Indicazioni
+                            {content.ctaLabel}
                         </a>
                     </div>
                 </div>

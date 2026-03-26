@@ -2,7 +2,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "./Footer.module.css";
-import { siteContent } from "@/src/content/global";
+import { contacts, siteContent } from "@/src/content/global";
 import { menuItems } from "@/src/lib/menuItems";
 import { services } from "@/src/lib/services";
 
@@ -44,7 +44,7 @@ export const Footer = () => {
                         <ul className={styles.contactList}>
                             <li className={styles.contactItem}>
                                 <Phone size={20} className={styles.contactIcon} />
-                                <a href={`tel:${text.phone.replace(/\s+/g, "")}`} className={`${styles.link} ${styles.smallText}`}>
+                                <a href={contacts.hrefPhoneNumber} className={`${styles.link} ${styles.smallText}`}>
                                     {text.phone}
                                 </a>
                             </li>

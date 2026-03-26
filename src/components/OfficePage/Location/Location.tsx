@@ -1,6 +1,7 @@
 
 import { ArrowRight, Car, MapPin, Navigation } from "lucide-react";
 import styles from "./Location.module.css";
+import { contacts } from "@/src/content/global";
 
 export const Location = () => {
 
@@ -49,7 +50,7 @@ export const Location = () => {
                 </div>
                 <div className={styles.ctaWrap}>
                     <a
-                        href="https://maps.app.goo.gl/gvpoyVtXfuMnt6rZ8"
+                        href={contacts.hrefPhoneNumber}
                         target="_blank"
                         rel="noopener noreferrer"
                         className={styles.ctaBtn}
@@ -60,6 +61,6 @@ export const Location = () => {
                     </a>
                 </div>
             </div>
-        </section>
+        </section >
     );
 };

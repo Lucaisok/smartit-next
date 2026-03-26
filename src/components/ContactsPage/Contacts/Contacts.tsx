@@ -1,6 +1,6 @@
 import { Mail, MapPin, MessageCircle, Phone } from "lucide-react";
 import styles from "./Contacts.module.css";
-import { siteContent } from "@/src/content/global";
+import { contacts, siteContent } from "@/src/content/global";
 
 export const Contacts = () => {
     const footer = siteContent.footer;
@@ -44,7 +44,7 @@ export const Contacts = () => {
                         <div>
                             <div className={styles.infoLabel}>{officeLabels.phoneTitle}</div>
                             <a
-                                href={`tel:${footer.phone.replace(/\s+/g, "")}`}
+                                href={contacts.hrefPhoneNumber}
                                 className={styles.infoLink}
                             >
                                 {footer.phone}

@@ -1,7 +1,7 @@
 
 import { ArrowRight, Clock, MapPin, Phone } from "lucide-react";
 import styles from "./CardsSection.module.css";
-import { siteContent } from "@/src/content/global";
+import { contacts, siteContent } from "@/src/content/global";
 
 export const CardsSection = () => {
     const cards = siteContent.officeSection.cards;
@@ -19,7 +19,7 @@ export const CardsSection = () => {
                         <p className={styles.cardTextSmall}>{cards.addressLine2}</p>
                         <div className={styles.cardSpacer}></div>
                         <a
-                            href="https://maps.app.goo.gl/gvpoyVtXfuMnt6rZ8"
+                            href={contacts.hrefPhoneNumber}
                             target="_blank"
                             rel="noopener noreferrer"
                             className={styles.cardLink}
@@ -36,7 +36,7 @@ export const CardsSection = () => {
                         </div>
                         <h3 className={styles.cardTitle}>{cards.phoneTitle}</h3>
                         <a
-                            href="tel:+390282860583"
+                            href={contacts.hrefPhoneNumber}
                             className={styles.cardPhone}
                         >
                             {cards.phoneNumber}
@@ -44,7 +44,7 @@ export const CardsSection = () => {
                         <p className={styles.cardTextSmall}>{cards.phoneNote}</p>
                         <div className={styles.cardSpacer}></div>
                         <a
-                            href="tel:+390282860583"
+                            href={contacts.hrefPhoneNumber}
                             className={styles.cardLink}
                         >
                             {cards.phoneCta}

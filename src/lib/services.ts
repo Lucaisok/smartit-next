@@ -10,7 +10,8 @@ export const services: Service[] = [
         icon: Sparkles,
         shortDescription: siteContent.services.cleaning.shortDescription,
         description: siteContent.services.cleaning.description,
-        image: "https://images.unsplash.com/photo-1627098241506-344dea0aa27b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvZmZpY2UlMjBjbGVhbmluZyUyMHByb2Zlc3Npb25hbCUyMHNlcnZpY2V8ZW58MXx8fHwxNzczMzI4Njc4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+        image: "/services/cleaning/cover.jpg",
+        faqs: siteContent.services.cleaning.faqs
     },
     {
         id: "pulizie-aziende-uffici",
