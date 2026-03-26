@@ -1,6 +1,6 @@
 import { Building2, Factory, Home, Sparkles, Wrench, Paintbrush, Truck, Package, Users, Hammer, BoxIcon, Trees } from "lucide-react";
 import { siteContent } from "../content/global";
-import { AdditionalService, Service } from "../types";
+import { Service } from "../types";
 
 export const services: Service[] = [
     {
@@ -59,90 +59,83 @@ export const services: Service[] = [
         faqs: siteContent.services.maintenance.faqs
     },
     {
-        title: "Imbiancature",
-        intro: "Servizio di imbiancatura professionale per interni ed esterni.",
         id: "imbiancature",
         slug: "imbiancature",
+        title: siteContent.services.imbiancature.title,
+        intro: siteContent.services.imbiancature.intro,
         icon: Paintbrush,
-        shortDescription: "Imbiancatura professionale per interni ed esterni, con finiture di alta qualità e attenzione a ogni dettaglio. Dona nuova luce e valore ai tuoi ambienti con un servizio rapido, pulito e su misura per le tue esigenze.",
-        description: `Offriamo un servizio di imbiancatura professionale pensato per abitazioni, uffici e spazi commerciali di ogni dimensione. Il nostro obiettivo è valorizzare i tuoi ambienti, donando loro un aspetto fresco, ordinato e accogliente.
-
-Utilizziamo esclusivamente vernici di alta qualità e tecniche avanzate, selezionate per garantire una finitura liscia, uniforme e duratura nel tempo. Ogni intervento viene eseguito con la massima cura, rispettando le esigenze specifiche di ogni cliente e le caratteristiche degli spazi.
-
-Il nostro team di esperti si occupa di tutte le fasi del lavoro: dalla protezione e preparazione delle superfici, alla stesura della pittura, fino alla pulizia finale. Siamo attenti ai dettagli e lavoriamo in modo rapido e ordinato, assicurando un risultato impeccabile che trasforma e valorizza ogni ambiente.`,
+        shortDescription: siteContent.services.imbiancature.shortDescription,
+        description: siteContent.services.imbiancature.description,
         image: "/services/whitewashing/cover.jpg",
-        faqs: [
-            {
-                question: "Quanto tempo richiede un'imbiancatura?",
-                answer: "Dipende dalle dimensioni. Un appartamento medio richiede 2-3 giorni."
-            },
-            {
-                question: "Devo spostare i mobili?",
-                answer: "Ci occupiamo noi di spostare e proteggere mobili e arredi."
-            }
-        ]
+        faqs: siteContent.services.imbiancature.faqs
     }
 ];
 
-export const additionalServices: AdditionalService[] = [
+export const additionalServices: Service[] = [
     {
-        title: "Servizi di portierato e reception",
         id: "portierato-reception",
         slug: "portierato-reception",
-        intro: "Personale qualificato per accoglienza e gestione delle portinerie.",
-        shortDescription: "Personale qualificato per accoglienza e gestione delle portinerie.",
-        description: "Descrizione temporanea: servizio di portierato e reception per aziende e condomini.",
-        image: "https://images.unsplash.com/photo-1515165562835-c7b7b7b7b7b7?auto=format&fit=crop&w=800&q=80",
+        title: siteContent.services.reception.title,
+        intro: siteContent.services.reception.intro,
+        shortDescription: siteContent.services.reception.shortDescription,
+        description: siteContent.services.reception.description,
+        image: "/services/reception/cover.png",
         icon: Users,
+        faqs: siteContent.services.reception.faqs
     },
     {
-        title: "Allestimento uffici",
         id: "allestimento-uffici",
         slug: "allestimento-uffici",
-        intro: "Progettazione e realizzazione di spazi di lavoro funzionali.",
-        shortDescription: "Progettazione e realizzazione di spazi di lavoro funzionali.",
-        description: "Descrizione temporanea: servizio di allestimento e organizzazione spazi ufficio.",
-        image: "https://images.unsplash.com/photo-1464983953574-0892a7162a8e?auto=format&fit=crop&w=800&q=80",
+        title: siteContent.services.officeSetup.title,
+        intro: siteContent.services.officeSetup.intro,
+        shortDescription: siteContent.services.officeSetup.shortDescription,
+        description: siteContent.services.officeSetup.description,
+        image: "/services/officeSetup/cover.jpg",
         icon: Package,
+        faqs: siteContent.services.officeSetup.faqs
     },
     {
-        title: "Traslochi e movimentazione arredi",
         id: "traslochi-movimentazioni-arredi",
         slug: "traslochi-movimentazioni-arredi",
-        intro: "Servizi completi di trasloco e movimentazione mobili e attrezzature.",
-        shortDescription: "Servizi completi di trasloco e movimentazione mobili e attrezzature.",
-        description: "Descrizione temporanea: servizio di traslochi e movimentazione arredi per aziende e privati.",
-        image: "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=80",
+        title: siteContent.services.moving.title,
+        intro: siteContent.services.moving.intro,
+        shortDescription: siteContent.services.moving.shortDescription,
+        description: siteContent.services.moving.description,
+        image: "/services/moving/cover.jpg",
         icon: Truck,
+        faqs: siteContent.services.moving.faqs
     },
     {
-        title: "Piccoli lavori edili",
         id: "piccoli-lavori-edili",
         slug: "piccoli-lavori-edili",
-        intro: "Interventi edilizi di piccola entità per manutenzione e ristrutturazione.",
-        shortDescription: "Interventi edilizi di piccola entità per manutenzione e ristrutturazione.",
-        description: "Descrizione temporanea: servizio di piccoli lavori edili e manutenzione.",
-        image: "https://images.unsplash.com/photo-1506744038136-462fa3a6a7f0?auto=format&fit=crop&w=800&q=80",
+        title: siteContent.services.smallConstructions.title,
+        intro: siteContent.services.smallConstructions.intro,
+        shortDescription: siteContent.services.smallConstructions.shortDescription,
+        description: siteContent.services.smallConstructions.description,
+        image: "/services/smallConstruction/cover.jpg",
         icon: Hammer,
+        faqs: siteContent.services.smallConstructions.faqs
     },
     {
-        title: "Facchinaggio e magazzinaggio",
         id: "facchinaggio-magazzinaggio",
         slug: "facchinaggio-magazzinaggio",
-        intro: "Gestione logistica, stoccaggio e movimentazione merci.",
-        shortDescription: "Gestione logistica, stoccaggio e movimentazione merci.",
-        description: "Descrizione temporanea: servizio di facchinaggio e magazzinaggio per aziende.",
-        image: "https://images.unsplash.com/photo-1465101046530-73398c7f1d1b?auto=format&fit=crop&w=800&q=80",
+        title: siteContent.services.warehouse.title,
+        intro: siteContent.services.warehouse.intro,
+        shortDescription: siteContent.services.warehouse.shortDescription,
+        description: siteContent.services.warehouse.description,
+        image: "/services/warehouse/cover.jpg",
         icon: BoxIcon,
+        faqs: siteContent.services.warehouse.faqs
     },
     {
-        title: "Manutenzione del verde",
         id: "manutenzione-verde",
         slug: "manutenzione-verde",
-        intro: "Cura e manutenzione di giardini, aree verdi e spazi esterni.",
-        shortDescription: "Cura e manutenzione di giardini, aree verdi e spazi esterni.",
-        description: "Descrizione temporanea: servizio di manutenzione del verde e giardinaggio.",
-        image: "https://images.unsplash.com/photo-1465101178521-c1fcd5d1b1b1?auto=format&fit=crop&w=800&q=80",
+        title: siteContent.services.gardening.title,
+        intro: siteContent.services.gardening.intro,
+        shortDescription: siteContent.services.gardening.shortDescription,
+        description: siteContent.services.gardening.description,
+        image: "/services/gardening/cover.jpg",
         icon: Trees,
+        faqs: siteContent.services.gardening.faqs
     }
 ];

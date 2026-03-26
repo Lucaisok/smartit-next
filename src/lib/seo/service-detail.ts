@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { services } from "@/src/lib/services";
+import { additionalServices, services } from "@/src/lib/services";
 
 export async function generateServiceMetadata(slug: string): Promise<Metadata> {
-    const service = services.find((s) => s.slug === slug);
+    const service = [...services, ...additionalServices].find((s) => s.slug === slug);
     if (!service) return {};
 
     const locations = "Milano, Assago, Buccinasco";
@@ -65,7 +65,7 @@ export async function generateServiceMetadata(slug: string): Promise<Metadata> {
 }
 
 export function getServiceStructuredData(slug: string) {
-    const service = services.find((s) => s.slug === slug);
+    const service = [...services, ...additionalServices].find((s) => s.slug === slug);
     if (!service) return null;
     const locations = ["Milano", "Assago", "Buccinasco"];
     return {

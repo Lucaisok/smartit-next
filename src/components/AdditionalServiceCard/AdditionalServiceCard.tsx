@@ -1,10 +1,10 @@
 import { ArrowRight } from 'lucide-react';
 import { siteContent } from '../../content/global';
-import { AdditionalService } from '../../types';
 import styles from './AdditionalServiceCard.module.css';
+import { Service } from '@/src/types';
 
 interface AdditionalServiceCardProps {
-    additionalService: AdditionalService;
+    additionalService: Service;
 }
 export const AdditionalServiceCard = ({ additionalService }: AdditionalServiceCardProps) => {
     const Icon = additionalService.icon;

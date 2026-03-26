@@ -369,8 +369,158 @@ Lavoriamo su tutto il territorio di Milano, Assago, Buccinasco e in tutta la Lom
         imbiancature: {
             title: "Imbiancature",
             intro: "Servizio di imbiancatura professionale per interni ed esterni.",
-            shortDescription: "Servizio di imbiancatura professionale per interni ed esterni.",
-            description: "Offriamo un servizio completo di imbiancatura per abitazioni, uffici e spazi commerciali. Utilizziamo vernici di alta qualità e tecniche avanzate per assicurare una finitura liscia e uniforme. Il nostro team di esperti si occupa di ogni fase del processo, dalla preparazione delle superfici alla pulizia finale, garantendo un risultato impeccabile che trasforma i tuoi spazi.",
+            shortDescription: "Imbiancatura professionale per interni ed esterni, con finiture di alta qualità e attenzione a ogni dettaglio. Dona nuova luce e valore ai tuoi ambienti con un servizio rapido, pulito e su misura per le tue esigenze.",
+            description: `Offriamo un servizio di imbiancatura professionale pensato per abitazioni, uffici e spazi commerciali di ogni dimensione. Il nostro obiettivo è valorizzare i tuoi ambienti, donando loro un aspetto fresco, ordinato e accogliente.
+
+Utilizziamo esclusivamente vernici di alta qualità e tecniche avanzate, selezionate per garantire una finitura liscia, uniforme e duratura nel tempo. Ogni intervento viene eseguito con la massima cura, rispettando le esigenze specifiche di ogni cliente e le caratteristiche degli spazi.
+
+Il nostro team di esperti si occupa di tutte le fasi del lavoro: dalla protezione e preparazione delle superfici, alla stesura della pittura, fino alla pulizia finale. Siamo attenti ai dettagli e lavoriamo in modo rapido e ordinato, assicurando un risultato impeccabile che trasforma e valorizza ogni ambiente.`,
+            faqs: [
+                {
+                    question: "Quanto tempo richiede un'imbiancatura?",
+                    answer: "Dipende dalle dimensioni. Un appartamento medio richiede 2-3 giorni."
+                },
+                {
+                    question: "Devo spostare i mobili?",
+                    answer: "Ci occupiamo noi di spostare e proteggere mobili e arredi."
+                }
+            ]
         },
+        reception: {
+            title: "Servizi di portierato e reception",
+            intro: "Personale qualificato per accoglienza e gestione delle portinerie.",
+            shortDescription: "Personale affidabile e qualificato per accoglienza, vigilanza e gestione professionale di portinerie e reception. Garantiamo presenza, cortesia e attenzione a ogni esigenza di condomini e aziende.",
+            description: `Offriamo servizi di portierato e reception pensati per aziende, condomini e complessi residenziali che desiderano una gestione professionale e sicura degli accessi.
+
+Il nostro personale, selezionato e formato, garantisce accoglienza cortese, controllo degli ingressi, gestione della corrispondenza e supporto organizzativo per residenti, visitatori e dipendenti. Ogni servizio è personalizzato in base alle esigenze specifiche della struttura, assicurando presenza costante, discrezione e massima affidabilità.
+
+Affidarsi a noi significa migliorare la sicurezza, l’immagine e l’efficienza degli spazi, offrendo un punto di riferimento sempre disponibile e attento a ogni necessità quotidiana.`,
+            faqs: [
+                {
+                    question: "Il personale parla inglese?",
+                    answer: "Sì, selezioniamo personale con competenze linguistiche adeguate."
+                },
+                {
+                    question: "Potete coprire turni notturni?",
+                    answer: "Sì, offriamo copertura H24 secondo necessità."
+                },
+                {
+                    question: "Come gestite le sostituzioni?",
+                    answer: "Abbiamo personale di backup già formato per garantire continuità."
+                }
+            ]
+        },
+        officeSetup: {
+            title: "Allestimento uffici",
+            intro: "Progettazione e realizzazione di spazi di lavoro funzionali.",
+            shortDescription: "Progettazione e allestimento di uffici moderni, funzionali e su misura. Trasformiamo ogni spazio di lavoro in un ambiente efficiente, accogliente e pensato per il benessere e la produttività.",
+            description: `Progettiamo e realizziamo spazi di lavoro moderni, funzionali e su misura, pensati per rispondere alle esigenze specifiche di ogni azienda.
+
+Dall’analisi degli ambienti alla scelta degli arredi, ci occupiamo di ogni fase dell’allestimento, ottimizzando la disposizione degli spazi per favorire comfort, produttività e collaborazione tra i team. Utilizziamo soluzioni innovative e materiali di qualità per creare uffici accoglienti, efficienti e rappresentativi.
+
+Affidarsi a noi significa trasformare il luogo di lavoro in un ambiente che valorizza le persone e migliora l’immagine aziendale, con attenzione a design, ergonomia e funzionalità.`,
+
+            faqs: [
+                {
+                    question: "Quanto tempo richiede un allestimento?",
+                    answer: "Dipende dalle dimensioni. Un ufficio medio richiede 2-4 settimane."
+                },
+                {
+                    question: "Posso scegliere i fornitori?",
+                    answer: "Sì, lavoriamo con i migliori fornitori ma accettiamo anche vostre preferenze."
+                },
+                {
+                    question: "Gestite anche il trasloco?",
+                    answer: "Sì, possiamo coordinare anche il trasloco nel nuovo ufficio."
+                }
+            ]
+        },
+        moving: {
+            title: "Traslochi e movimentazione arredi",
+            intro: "Servizi completi di trasloco e movimentazione mobili e attrezzature.",
+            shortDescription: "Traslochi rapidi e sicuri per aziende e privati. Ci occupiamo di ogni fase: smontaggio, movimentazione e rimontaggio di mobili e attrezzature, garantendo massima cura e puntualità.",
+            description: `Offriamo servizi di trasloco e movimentazione arredi per aziende e privati, garantendo rapidità, sicurezza e massima cura in ogni fase del lavoro.
+
+Ci occupiamo di smontaggio, imballaggio, trasporto e rimontaggio di mobili e attrezzature, utilizzando materiali protettivi e mezzi adeguati per preservare l’integrità di ogni oggetto. Il nostro personale esperto pianifica ogni dettaglio, riducendo al minimo i tempi di fermo e le difficoltà operative.
+
+Affidarsi a noi significa scegliere un trasloco senza stress, con la certezza di un servizio puntuale, organizzato e su misura per le tue esigenze.`,
+            faqs: [
+                {
+                    question: "Quando è meglio programmare un trasloco?",
+                    answer: "Per uffici consigliamo weekend o fuori orario lavorativo per non fermare l'attività."
+                },
+                {
+                    question: "Fornite i materiali di imballaggio?",
+                    answer: "Sì, forniamo scatole, pluriball, nastro e tutti i materiali necessari."
+                },
+            ]
+        },
+        smallConstructions: {
+            title: "Piccoli lavori edili",
+            intro: "Interventi edilizi di piccola entità per manutenzione e ristrutturazione.",
+            shortDescription: "Piccoli lavori edili per manutenzione e ristrutturazione, eseguiti con precisione e rapidità. Soluzioni su misura per ogni esigenza di casa o azienda.",
+            description: `Offriamo piccoli lavori edili per manutenzione e ristrutturazione di abitazioni, uffici e spazi commerciali, garantendo interventi rapidi e soluzioni su misura.
+
+Il nostro team si occupa di riparazioni, modifiche, posa di rivestimenti, cartongesso, tinteggiature e altre lavorazioni leggere, sempre con attenzione ai dettagli e rispetto dei tempi concordati. Utilizziamo materiali di qualità e tecniche aggiornate per assicurare risultati duraturi e sicuri.
+
+Scegliere i nostri servizi significa affidarsi a professionisti versatili e disponibili, pronti a risolvere ogni esigenza con precisione, trasparenza e massima cura per gli ambienti.`,
+            faqs: [
+                {
+                    question: "Servono permessi per i lavori?",
+                    answer: "Per piccoli interventi generalmente no, ma valutiamo caso per caso e vi assistiamo nelle pratiche."
+                },
+                {
+                    question: "Quanto durano i lavori?",
+                    answer: "Dipende dall'intervento. Piccole riparazioni anche in giornata."
+                },
+                {
+                    question: "Smaltite i materiali di risulta?",
+                    answer: "Sì, ci occupiamo dello smaltimento secondo normativa."
+                }
+            ]
+        },
+        warehouse: {
+            title: "Facchinaggio e magazzinaggio",
+            intro: "Gestione logistica, stoccaggio e movimentazione merci.",
+            shortDescription: "Facchinaggio e magazzinaggio efficienti per aziende: movimentazione, stoccaggio e gestione merci con rapidità, sicurezza e massima organizzazione",
+            description: `Offriamo servizi di facchinaggio e magazzinaggio per aziende che necessitano di una gestione efficiente e sicura delle merci.
+
+Il nostro personale si occupa di movimentazione, carico e scarico, stoccaggio e organizzazione dei materiali, utilizzando attrezzature adeguate e seguendo procedure rigorose per garantire l’integrità delle merci e la sicurezza degli ambienti di lavoro.
+
+Siamo in grado di adattarci a esigenze logistiche diverse, offrendo soluzioni flessibili e tempestive per supportare la produttività e l’operatività della tua azienda in ogni fase della filiera.`,
+            faqs: [
+                {
+                    question: "Potete gestire merci pesanti?",
+                    answer: "Sì, abbiamo personale formato e attrezzature per carichi pesanti."
+                },
+                {
+                    question: "Offrite servizio continuativo?",
+                    answer: "Sì, possiamo fornire personale dedicato per periodi prolungati."
+                }
+            ]
+        },
+        gardening: {
+            title: "Manutenzione del verde",
+            intro: "Cura e manutenzione di giardini, aree verdi e spazi esterni.",
+            shortDescription: "Cura professionale di giardini, aree verdi e spazi esterni. Manutenzione attenta, interventi stagionali e soluzioni su misura per valorizzare ogni ambiente verde.",
+            description: `Offriamo servizi di manutenzione del verde e giardinaggio per giardini privati, aree condominiali e spazi aziendali, con interventi mirati e soluzioni personalizzate.
+
+Il nostro team si occupa di taglio erba, potature, pulizia, trattamenti stagionali, impianti di irrigazione e cura di aiuole e siepi, utilizzando attrezzature moderne e tecniche rispettose dell’ambiente. Ogni intervento è pianificato in base alle esigenze del verde e alle stagioni, per garantire risultati duraturi e spazi sempre curati.`,
+
+            faqs: [
+                {
+                    question: "Con quale frequenza intervenite?",
+                    answer: "Dipende dal tipo di verde. Generalmente settimanale in primavera/estate, mensile in autunno/inverno."
+                },
+                {
+                    question: "Smaltite gli sfalci?",
+                    answer: "Sì, ci occupiamo della raccolta e smaltimento secondo normativa."
+                },
+                {
+                    question: "Fate anche impianti di irrigazione?",
+                    answer: "Sì, progettiamo e installiamo impianti di irrigazione automatica."
+                }
+            ]
+        }
     },
-};;
+};;;
