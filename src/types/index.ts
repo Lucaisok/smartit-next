@@ -14,6 +14,6 @@ export interface Service {
     shortDescription: string;
     description: string;
     icon: LucideIcon;
-    faqs?: Faq[];
+    faqs: Faq[];
 }
 

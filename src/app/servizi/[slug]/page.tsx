@@ -46,7 +46,7 @@ const ServicePage = async ({ params }: ServicePageProps) => {
                 <Breadcrumbs serviceTitle={service.title} />
                 <Hero title={service.title} shortDescription={service.shortDescription} image={service.image} Icon={service.icon} />
                 <Description description={service.description} />
-                {!!service.faqs && <Faqs serviceTitle={service.title} faqs={service.faqs} />}
+                <Faqs serviceTitle={service.title} faqs={service.faqs} />
                 <Contacts serviceTitle={service.title} />
                 <RelatedServices services={relatedServices} />
             </main>
