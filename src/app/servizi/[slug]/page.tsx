@@ -1,3 +1,5 @@
+import type { Metadata } from "next";
+import { generateServiceMetadata, getServiceStructuredData } from "@/src/lib/seo/service-detail";
 import { notFound } from "next/navigation";
 import { services } from "@/src/lib/services";
 import { Breadcrumbs } from "@/src/components/ServicePage/Breadcrumbs/Breadcrumbs";
@@ -6,6 +8,11 @@ import { Description } from "@/src/components/ServicePage/Description/Descriptio
 import { Faqs } from "@/src/components/ServicePage/Faq/Faq";
 import { Contacts } from "@/src/components/ServicePage/Contacts/Contacts";
 import { RelatedServices } from "@/src/components/ServicePage/RelatedServices/RelatedServices";
+
+// Dynamic SEO metadata for each service page
+export async function generateMetadata({ params }: { params: { slug: string; }; }): Promise<Metadata> {
+    return generateServiceMetadata(params.slug);
+}
 
 // Pre-generate all service slugs for static generation
 export async function generateStaticParams() {
@@ -27,15 +34,23 @@ const ServicePage = async ({ params }: ServicePageProps) => {
         .sort(() => Math.random() - 0.5)
         .slice(0, 3);
 
+    const structuredData = getServiceStructuredData(service.slug);
     return (
-        <main>
-            <Breadcrumbs serviceTitle={service.title} />
-            <Hero title={service.title} shortDescription={service.shortDescription} image={service.image} Icon={service.icon} />
-            <Description description={service.description} />
-            {!!service.faqs && <Faqs serviceTitle={service.title} faqs={service.faqs} />}
-            <Contacts serviceTitle={service.title} />
-            <RelatedServices services={relatedServices} />
-        </main>
+        <>
+            {structuredData && (
+                <script type="application/ld+json" suppressHydrationWarning>
+                    {JSON.stringify(structuredData)}
+                </script>
+            )}
+            <main>
+                <Breadcrumbs serviceTitle={service.title} />
+                <Hero title={service.title} shortDescription={service.shortDescription} image={service.image} Icon={service.icon} />
+                <Description description={service.description} />
+                {!!service.faqs && <Faqs serviceTitle={service.title} faqs={service.faqs} />}
+                <Contacts serviceTitle={service.title} />
+                <RelatedServices services={relatedServices} />
+            </main>
+        </>
     );
 };
 
