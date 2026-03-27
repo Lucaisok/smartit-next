@@ -6,6 +6,7 @@ import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { Card } from "./Card";
 import styles from "./RelatedServices.module.css";
+import { AdditionalServiceCard } from "../../AdditionalServiceCard/AdditionalServiceCard";
 
 interface RelatedServicesProps {
     services: Service[];
@@ -20,7 +21,7 @@ export const RelatedServices = ({ services }: RelatedServicesProps) => {
                 </div>
                 <div className={styles.grid}>
                     {services.map((service) => (
-                        <Card service={service} key={service.id} />
+                        <AdditionalServiceCard additionalService={service} key={service.id} />
                     ))}
                 </div>
                 <div className={styles.cta}>

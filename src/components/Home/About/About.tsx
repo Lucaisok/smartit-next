@@ -16,7 +16,7 @@ export const About = () => {
     return (
         <section className={styles.descriptionSection}>
             <div className={styles.descriptionContainer}>
-                <p className={`${styles.text} ${styles.lead}`}>{brandJsx} {firstLine}</p>
+                <p className={`${styles.text} ${styles.lead}`} style={{ marginBottom: "2rem" }}>{brandJsx} {firstLine}</p>
                 <p className={styles.text} style={{ marginBottom: "1rem" }}>{about.description}</p>
                 <div className={styles.paragraph}>
                     <p className={styles.text}>{about.paragraph}</p>

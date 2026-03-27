@@ -2,6 +2,8 @@ import { ArrowRight } from 'lucide-react';
 import { siteContent } from '../../content/global';
 import styles from './AdditionalServiceCard.module.css';
 import { Service } from '@/src/types';
+import Link from 'next/link';
+import { routes } from '@/src/lib/routes';
 
 interface AdditionalServiceCardProps {
     additionalService: Service;
@@ -10,7 +12,7 @@ export const AdditionalServiceCard = ({ additionalService }: AdditionalServiceCa
     const Icon = additionalService.icon;
     const text = siteContent.home.additionalServicesSection;
 
-    return <div className={styles.card}>
+    return <Link href={`${routes.services}/${additionalService.slug}`} className={styles.card}>
         <div className={styles.accentBar}></div>
         <div className={styles.inner}>
             <div className={styles.iconBox}>
@@ -25,5 +27,5 @@ export const AdditionalServiceCard = ({ additionalService }: AdditionalServiceCa
                 </div>
             </div>
         </div>
-    </div>;
+    </Link>;
 };

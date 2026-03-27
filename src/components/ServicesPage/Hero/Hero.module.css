@@ -41,3 +41,19 @@
     max-width: 48rem;
     margin: 0.5rem auto;
 }
+
+
+@media (max-width: 768px) {
+    .section {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .hideMobile {
+        display: none;
+    }
+
+    .titleHighlight {
+        color: white;
+    }
+}

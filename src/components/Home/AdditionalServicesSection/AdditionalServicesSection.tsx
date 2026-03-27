@@ -19,7 +19,6 @@ export const AdditionalServicesSection = () => {
                     <p className={styles.description}>{text.description}</p>
                 </div>
                 <div className={styles.grid}>
-                    {/* to be changed with addtional services */}
                     {additionalServices.map((service) => {
                         return (
                             <AdditionalServiceCard key={service.id} additionalService={service} />

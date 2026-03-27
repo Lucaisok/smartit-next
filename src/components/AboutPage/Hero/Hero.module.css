@@ -9,7 +9,7 @@
 .overlay {
     position: absolute;
     inset: 0;
-    opacity: 0.15;
+    opacity: 0.3;
 }
 
 .overlayImage {
@@ -18,20 +18,32 @@
     object-fit: cover;
 }
 
+@media (max-width: 768px) {
+    .section {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .title {
+        font-size: var(--font-size-hero-title-sm);
+    }
+}
+
 .container {
     position: relative;
     max-width: var(--container-max-width);
     margin: 0 auto;
     padding: 0 var(--container-padding-lg);
+    text-align: center;
 }
 
 .inner {
     max-width: 48rem;
+    margin: 0 auto;
 }
 
 .title {
-    font-size: var(--font-size-4xl);
-    font-weight: 600;
+    font-size: var(--font-size-hero-title-md);
     margin-bottom: 1.5rem;
 }
 
@@ -42,5 +54,6 @@
 .description {
     font-size: var(--font-size-xl);
     color: var(--color-hero-subtitle);
-    line-height: 1.6;
+    max-width: 48rem;
+    margin: 0.5rem auto;
 }

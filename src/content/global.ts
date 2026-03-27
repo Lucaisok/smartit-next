@@ -151,7 +151,7 @@ export const siteContent = {
             subtitle: "Cosa ci distingue nel panorama del facility management a Milano",
         },
         hero: {
-            image: "https://images.unsplash.com/photo-1559458049-9d62fceeb52b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBtaWxhbiUyMG9mZmljZmluZ3xlbnwxfHx8fDE3NzM4NDg5ODR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+            image: "/aboutPageHero/cover.jpg",
             imageAlt: "Milano",
             titleStart: "Chi",
             titleHighlight: "Siamo",
@@ -175,7 +175,7 @@ export const siteContent = {
                 "Con Smart it ampliamo ulteriormente il nostro ventaglio di servizi occupandoci con professionalità e flessibilità della gestione del vostro ambiente in tutte le sue fasi, per offrirvi soluzioni su misura che valorizzino e preservino i vostri spazi."
             ],
             image: {
-                src: "https://images.unsplash.com/photo-1697463624716-cd2f0423d9d9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjBjbGVhbmluZyUyMHRlYW0lMjBvZmZpY2V8ZW58MXx8fHwxNzczODQ4OTg0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+                src: "/aboutPageHero/team.jpg",
                 alt: "Team Smart it",
             },
             experience: {
@@ -241,7 +241,7 @@ export const siteContent = {
     contactsPage: {
         hero: {
             title: "Contattaci",
-            description: "Hai bisogno di informazioni o vuoi richiedere un preventivo? Siamo qui per aiutarti."
+            description: "Hai bisogno di informazioni o vuoi richiedere un preventivo?"
         },
         form: {
             title: "Richiedi un Preventivo",

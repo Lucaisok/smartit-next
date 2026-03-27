@@ -14,7 +14,7 @@ export const Hero = () => {
             </div>
             <div className={styles.container}>
                 <h1 className={styles.title}>
-                    {hero.titleStart} <span className={styles.titleHighlight}>{hero.titleHighlight}</span>
+                    <span className={styles.hideMobile}>{hero.titleStart}</span> <span className={styles.titleHighlight}>{hero.titleHighlight}</span>
                 </h1>
                 <p className={styles.description}>{hero.description1}</p>
             </div>
