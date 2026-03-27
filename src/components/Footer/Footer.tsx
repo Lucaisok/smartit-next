@@ -15,7 +15,7 @@ export const Footer = () => {
                 <div className={styles.grid}>
                     <div>
                         <div className={styles.logoBox}>
-                            <Image src="/no-text-logo.png" alt={text.logoAlt} width={667} height={164} className={styles.logo} />
+                            <Image src="/smartit-logo.png" alt={text.logoAlt} width={667} height={164} className={styles.logo} />
                         </div>
                         <p className={styles.muted}>{text.companyDescription}</p>
                     </div>

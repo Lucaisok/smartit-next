@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 import styles from "./Hero.module.css";
 import { siteContent } from "../../../content/global";
 import { routes } from "../../../lib/routes";
@@ -17,6 +17,7 @@ export const Hero = () => {
                 />
             </div>
             <div className={styles.content}>
+                <div className={styles.contentOverlay} aria-hidden="true" />
                 <div className={styles.inner}>
                     <h1 className={styles.title}>
                         {hero.titleStart} <span className={styles.titleHighlight}>{hero.titleHighlight}</span> <span className={styles.titleLocation}></span>
@@ -25,13 +26,48 @@ export const Hero = () => {
                         {hero.description}
                     </p>
                     <div className={styles.buttons}>
-                        <Link href={routes.contacts} className={styles.btnPrimary}>
-                            {hero.primaryCta}
+                        <Link href={routes.office} className={styles.btnPrimary}>
+                            {siteContent.header.officeLabel}
                             <ArrowRight size={22} />
                         </Link>
                         <Link href={routes.services} className={styles.btnSecondary}>
                             {hero.secondaryCta}
                         </Link>
+                    </div>
+                    <div className={styles.featureCards}>
+                        <div className={styles.featureCard}>
+                            <div className={styles.featureCardRow}>
+                                <div className={styles.featureCardIconBox}>
+                                    <CheckCircle2 className={styles.featureCardIcon} size={24} />
+                                </div>
+                                <div>
+                                    <div className={styles.featureCardTitle}>15 Anni di Esperienza</div>
+                                    <div className={styles.featureCardSubtitle}>Al tuo servizio</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.featureCard}>
+                            <div className={styles.featureCardRow}>
+                                <div className={styles.featureCardIconBox}>
+                                    <CheckCircle2 className={styles.featureCardIcon} size={24} />
+                                </div>
+                                <div>
+                                    <div className={styles.featureCardTitle}>Preventivo Gratuito</div>
+                                    <div className={styles.featureCardSubtitle}>100% Garanatito</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.featureCard}>
+                            <div className={styles.featureCardRow}>
+                                <div className={styles.featureCardIconBox}>
+                                    <CheckCircle2 className={styles.featureCardIcon} size={24} />
+                                </div>
+                                <div>
+                                    <div className={styles.featureCardTitle}>Sopralluogo Gratuito</div>
+                                    <div className={styles.featureCardSubtitle}>100% Garanatito</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

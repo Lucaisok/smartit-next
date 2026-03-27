@@ -22,8 +22,8 @@ const ContactsPage = () => {
                 <section className={styles.section}>
                     <div className={styles.container}>
                         <div className={styles.grid}>
-                            <Form />
                             <Contacts />
+                            <Form />
                         </div>
                     </div>
                 </section>

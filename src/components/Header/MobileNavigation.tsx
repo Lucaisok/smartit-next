@@ -17,6 +17,7 @@ export const MobileNavigation = ({ mobileMenuOpen, toggleMenu }: MobileNavigatio
     const ServicesIcon = menuItems.services.icon;
     const AboutIcon = menuItems.about.icon;
     const ContactIcon = menuItems.contact.icon;
+    const OfficeIcon = menuItems.office.icon;
 
     return (
         <AnimatePresence>
@@ -52,9 +53,10 @@ export const MobileNavigation = ({ mobileMenuOpen, toggleMenu }: MobileNavigatio
                                 className={styles.logoBox}
                             >
                                 <div className={styles.logoInner}>
-                                    <Image src="/no-text-logo.png" alt={text.logoAlt} width={667} height={164} className={styles.logoImg} priority />
+                                    <Image src="/smartit-logo.png" alt={text.logoAlt} width={667} height={164} className={styles.logoImg} priority />
                                 </div>
                             </motion.div>
+
 
                             {/* Menu Items */}
                             <div className={styles.menuList}>
@@ -130,26 +132,24 @@ export const MobileNavigation = ({ mobileMenuOpen, toggleMenu }: MobileNavigatio
                                     </Link>
                                 </motion.div>
 
-                                {/* WhatsApp Button */}
                                 <motion.div
-                                    initial={{ opacity: 0, y: 20 }}
-                                    animate={{ opacity: 1, y: 0 }}
+                                    key={menuItems.office.href}
+                                    initial={{ opacity: 0, x: 50 }}
+                                    animate={{ opacity: 1, x: 0 }}
                                     transition={{ delay: 0.6, type: "spring" }}
-                                    className={styles.ctaWrapper}
                                 >
                                     <Link
-                                        href="https://wa.me/393483327741"
+                                        href={menuItems.office.href}
                                         className={styles.menuLink}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
                                         onClick={() => toggleMenu()}
                                     >
                                         <div className={styles.iconBox}>
-                                            <FaWhatsapp className={styles.icon} />
+                                            <OfficeIcon className={styles.icon} />
                                         </div>
-                                        <span className={styles.menuLabel}>WhatsApp</span>
+                                        <span className={styles.menuLabel}>{menuItems.office.label}</span>
                                     </Link>
                                 </motion.div>
+
                             </div>
 
                             {/* Footer Info */}

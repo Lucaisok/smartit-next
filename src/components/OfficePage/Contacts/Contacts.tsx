@@ -22,7 +22,7 @@ export default function Contacts() {
                         className={styles.primaryBtn}
                     >
                         <Phone size={22} />
-                        {`${siteContent.officeSection.cards.phoneNote}: ${contacts.phoneNumber}`}
+                        {`${siteContent.officeSection.cards.phoneNote}`}
                     </a>
                     <Link href={routes.contacts} className={styles.secondaryBtn}>
                         {content.ctaLabel}

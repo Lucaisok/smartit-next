@@ -58,13 +58,10 @@ export const Header = () => {
                         </Link>
                         <Link
                             href={menuItems.office.href}
-                            className={getClassName(menuItems.office.href)}
+                            className={styles.ctaLink}
                         >
                             {menuItems.office.label}
                         </Link>
-                        <div className={styles.ctaLink}>
-                            {siteContent.header.ctaLabel}
-                        </div>
                     </div>
 
                     {/* Mobile Menu Button */}
